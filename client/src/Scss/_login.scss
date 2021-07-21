@@ -1,0 +1,532 @@
+.container-login {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 2% 5%;
+  background: #000;
+
+  .login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    .slider {
+      width: 60%;
+      height: 100%;
+      background: #d1cfcf;
+    }
+
+    .login-content {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      flex-direction: column;
+      background: #16191c;
+
+      img {
+        position: relative;
+        width: 90px;
+      }
+
+      .content {
+        width: 100%;
+        padding: 20px 40px;
+        line-height: 2rem;
+
+        h1 {
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          color: #fff;
+        }
+
+        .rows {
+          padding: 10px 0;
+          label,
+          input {
+            width: 100%;
+            line-height: 2rem;
+          }
+
+          label {
+            color: #fff;
+            font-size: 14px;
+            width: auto;
+          }
+
+          input {
+            background: #1e2226;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+          }
+          ::placeholder {
+            color: rgba(177, 177, 177, 0.5);
+            font-family: "Inter", sans-serif;
+          }
+
+          .password-content {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+              color: #fff;
+              font-size: 14px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .buttons {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          padding-top: 20px;
+
+          .iniciar-sesion {
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            padding: 15px;
+            background: #2142a5;
+            color: #fff;
+            cursor: pointer;
+          }
+
+          span {
+            padding: 20px 0;
+            font-size: 14px;
+            color: #d1cfcf;
+          }
+
+          .btn-accounts {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              border: 2px solid #fff;
+              border-radius: 5px;
+              width: 200px;
+              padding: 15px;
+              background: none;
+              color: #fff;
+              cursor: pointer;
+              transition: 0.5s;
+            }
+
+            button:hover {
+              background: #fff;
+              color: #000;
+            }
+
+            .png-button {
+              width: 25px;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .signup {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        padding: 20px 0;
+        color: #acacac;
+
+        a {
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-login {
+    height: 100%;
+    padding: 0;
+
+    .login {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .slider {
+        width: 100%;
+        height: 100vh;
+        background: #d1cfcf;
+      }
+
+      .login-content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        flex-direction: column;
+        background: #16191c;
+
+        img {
+          position: relative;
+          width: 90px;
+        }
+
+        .content {
+          width: 100%;
+          padding: 20px 50px;
+          line-height: 2rem;
+
+          h1 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            color: #fff;
+          }
+
+          .rows {
+            padding: 10px 0;
+            label,
+            input {
+              width: 100%;
+              line-height: 2rem;
+            }
+
+            label {
+              color: #fff;
+              font-size: 14px;
+              width: auto;
+            }
+
+            input {
+              background: #1e2226;
+              padding: 5px 10px;
+              border: none;
+              border-radius: 5px;
+            }
+            ::placeholder {
+              color: rgba(177, 177, 177, 0.5);
+              font-family: "Inter", sans-serif;
+            }
+
+            .password-content {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              span {
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .buttons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 20px;
+
+            .iniciar-sesion {
+              border: none;
+              border-radius: 5px;
+              width: 100%;
+              padding: 15px;
+              background: #2142a5;
+              color: #fff;
+              cursor: pointer;
+            }
+
+            span {
+              padding: 20px 0;
+              font-size: 14px;
+              color: #d1cfcf;
+            }
+
+            .btn-accounts {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+
+              button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                width: 300px;
+                padding: 15px;
+                background: none;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.5s;
+              }
+
+              button:hover {
+                background: #fff;
+                color: #000;
+              }
+
+              .png-button {
+                width: 25px;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .signup {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          font-size: 14px;
+          padding: 20px 0;
+          color: #acacac;
+
+          p {
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-login {
+    height: 100%;
+    padding: 0;
+
+    .login {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .slider {
+        width: 100%;
+        height: 100vh;
+        background: #d1cfcf;
+      }
+
+      .login-content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        flex-direction: column;
+        background: #16191c;
+
+        img {
+          position: relative;
+          width: 90px;
+        }
+
+        .content {
+          width: 100%;
+          padding: 20px 40px;
+          line-height: 2rem;
+
+          h1 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            color: #fff;
+          }
+
+          .rows {
+            padding: 10px 0;
+            label,
+            input {
+              width: 100%;
+              line-height: 2rem;
+            }
+
+            label {
+              color: #fff;
+              font-size: 14px;
+              width: auto;
+            }
+
+            input {
+              background: #1e2226;
+              padding: 5px 10px;
+              border: none;
+              border-radius: 5px;
+            }
+            ::placeholder {
+              color: rgba(177, 177, 177, 0.5);
+              font-family: "Inter", sans-serif;
+            }
+
+            .password-content {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              span {
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+              }
+            }
+          }
+
+          .buttons {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 20px;
+
+            .iniciar-sesion {
+              border: none;
+              border-radius: 5px;
+              width: 100%;
+              padding: 15px;
+              background: #2142a5;
+              color: #fff;
+              cursor: pointer;
+            }
+
+            span {
+              padding: 20px 0;
+              font-size: 14px;
+              color: #d1cfcf;
+            }
+
+            .btn-accounts {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+
+              button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: 2px solid #fff;
+                border-radius: 5px;
+                width: 300px;
+                padding: 15px;
+                background: none;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.5s;
+              }
+
+              button:hover {
+                background: #fff;
+                color: #000;
+              }
+
+              .png-button {
+                width: 25px;
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        .signup {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          font-size: 14px;
+          padding: 20px 0;
+          color: #acacac;
+
+          p {
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container-login {
+    .login {
+      .login-content {
+        .content {
+          .buttons {
+            .btn-accounts {
+              button {
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-login {
+    .login {
+      .slider {
+        height: 100%;
+      }
+      .login-content {
+        .content {
+          padding: 15px;
+
+          .buttons {
+            .btn-accounts {
+              button {
+                width: 120px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

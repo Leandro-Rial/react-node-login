@@ -1,0 +1,95 @@
+.bg-home {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .wrapper {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(255, 255, 255, 0.9);
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+      -webkit-backdrop-filter: blur(35px);
+      backdrop-filter: blur(35px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .content {
+      max-width: 1000px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      h1 {
+          font-size: 15rem;
+      }
+    }
+  }
+}
+
+.home-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 7%;
+    
+    .content-home-product {
+        width: 50%;
+        font-family: "Poppins", sans-serif;
+        
+        span {
+            color: gray;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        p {
+            padding: 10px 0;
+            color: #323232;
+        }
+
+        strong {
+            color: #075dba;
+            font-weight: 100;
+        }
+
+    }
+
+    .image-home-product {
+        width: 50%;
+        
+        .img-home-product {
+            width: 100%;
+            height: 500px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #323232;
+    color: #fff;
+}
